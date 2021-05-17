@@ -51,13 +51,13 @@ arcthD (D a b) = D (arcth a) (b * arcth' a)
 
 f1, f1', f2, f2' :: Floating a => a -> a
 
- -- функиия из задания
+ -- функция из задания
 f1 x = sin (2 * exp (x*x))
 -- её аналитическая производная
 -- https://www.wolframalpha.com/input/?i=sin%282e%5Ex%5E2%29
 f1' x = 4 * x * exp (x * x) * cos(2 * exp (x * x)) 
 
--- функиия из задания
+-- функция из задания
 f2 x = x^3 - log (x ** 2) + 14 * cos (x/2) + (arcth x) ** 2
 -- её аналитическая производная
 -- https://www.wolframalpha.com/input/?i=x%5E3+-+ln+%28x%5E2%29+%2B+14*cos%28x%2F2%29+%2B+%28arcth+x%29%5E2
